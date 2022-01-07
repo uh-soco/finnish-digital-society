@@ -13,12 +13,12 @@ jobs:
       with:
         python-version: '3.9'
     - run: |
-      python -m pip install --upgrade pip
-      pip3 install pandas
-      pip3 install pyyaml
+        python -m pip install --upgrade pip
+        pip3 install pandas
+        pip3 install pyyaml
     - name: Run export script
       run: |
-      python3 ./.build/export.py
+        python3 ./.build/export.py
     - name: Archive production artifacts
       uses: actions/upload-artifact@v2
       with:
