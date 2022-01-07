@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build_and_test:
+  produce_export:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -19,7 +19,7 @@ jobs:
           pip3 install pyyaml
       - name: Run export script
         run: |
-          python3 ./build/export.py
+          python3 ./.build/export.py
       - name: Archive production artifacts
         uses: actions/upload-artifact@v2
         with:
