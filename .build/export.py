@@ -4,6 +4,11 @@ import json
 import yaml
 import pandas as pd
 
+try:
+ os.mkdir('./dist/')
+except:
+ pass
+
 for file_name in os.listdir('.'):
 
     if file_name.endswith( '.yaml' ):
@@ -14,5 +19,5 @@ for file_name in os.listdir('.'):
         data = pd.DataFrame.from_dict( data )
 
         ##data.to_json( file_name.replace('.yaml', '.json'), orient = 'records' ) ## this leads to ugly escaped jsons, workaround
-        json.dump( data.values.tolist() , open( file_name.replace('.yaml', '.json'), 'w') )
-        data.to_csv( file_name.replace('.yaml', '.csv'), index = False )
+        json.dump( data.values.tolist() , open(  './dist/' + file_name.replace('.yaml', '.json'), 'w') )
+        data.to_csv( './dist/' + file_name.replace('.yaml', '.csv'), index = False )
