@@ -25,13 +25,13 @@ jobs:
         with:
           path: dist/*
       - name: Commit generated files to GH pages
-          run: |
-            cd dist
-            git init
-            git add -A
-            git config --local user.email "action@github.com"
-            git config --local user.name "GitHub Action"
-            git commit -m 'deploy'
+        run: |
+          cd dist
+          git init
+          git add -A
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m 'deploy'
       - name: Publish on web
         uses: ad-m/github-push-action@v0.5.0
         with:
