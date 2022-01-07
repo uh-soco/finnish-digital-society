@@ -19,7 +19,7 @@ jobs:
           pip3 install pyyaml
       - name: Run export script
         run: |
-          python3 ./.build/export.py
+          python3 .code/export.py
       - name: Archive production artifacts
         uses: actions/upload-artifact@v2
         with:
