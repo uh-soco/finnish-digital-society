@@ -17,6 +17,7 @@ jobs:
           python -m pip install --upgrade pip
           pip3 install pandas
           pip3 install pyyaml
+          pip3 install openpyxl
       - name: Run export script
         run: |
           python3 .code/export.py
