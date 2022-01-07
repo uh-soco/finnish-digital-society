@@ -21,3 +21,4 @@ for file_name in os.listdir('.'):
         data.to_json( './dist/' + file_name.replace('.yaml', '.json'), orient = 'records' ) ## this leads to ugly escaped jsons, workaround
         ## json.dump( data.values.tolist() , open(  './dist/' + file_name.replace('.yaml', '.json'), 'w') )
         data.to_csv( './dist/' + file_name.replace('.yaml', '.csv'), index = False )
+        data.to_excel( './dist/' + file_name.replace('.yaml', '.xlsx') )

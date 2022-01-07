@@ -4,4 +4,4 @@ We will keep these up-to-date but if you find a problem, please open an issue an
 
 ## Politics
 
-* All Finnish political parties [.csv](https://uh-soco.github.io/finnish-digital-society/political_parties.csv) [.json](https://uh-soco.github.io/finnish-digital-society/political_parties.json) - Facebook, Twitter and Instagram accounts
+* All Finnish political parties [Excel](https://uh-soco.github.io/finnish-digital-society/political_parties.xlsx)  [.csv](https://uh-soco.github.io/finnish-digital-society/political_parties.csv) [.json](https://uh-soco.github.io/finnish-digital-society/political_parties.json) - Facebook, Twitter and Instagram accounts
